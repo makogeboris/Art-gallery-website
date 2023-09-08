@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/mkboris/Art-gallery-website
-- Live Site URL: https://typemaster-landing-page-three.vercel.app/
+- Live Site URL: https://art-gallery-website-three.vercel.app/
 
 ### Built with
 
