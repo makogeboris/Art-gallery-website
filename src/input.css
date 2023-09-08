@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.social-icon:hover {
+  filter: invert(66%) sepia(57%) saturate(342%) hue-rotate(340deg)
+    brightness(89%) contrast(86%);
+}
+
+.social-icon2 {
+  filter: invert(98%) sepia(57%) saturate(1%) hue-rotate(147deg)
+    brightness(118%) contrast(100%);
+}
+
+.social-icon2:hover {
+  filter: invert(0%) sepia(5%) saturate(7482%) hue-rotate(261deg)
+    brightness(98%) contrast(106%);
+}
+
+#btn:hover #btn-arrow {
+  background-color: #151515;
+}
