@@ -17,6 +17,20 @@
       href="./assets/favicon-32x32.png"
     />
     <link href="/dist/output.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <script defer src="js/script.js"></script>
     <title>Frontend Mentor | Art gallery website</title>
   </head>
   <body>
@@ -45,8 +59,9 @@
               Back to Home</a
             >
           </div>
-
-          <picture>
+          <!-- leaflet map -->
+          <div class="h-[37.5rem] grayscale" id="map"></div>
+          <!-- <picture>
             <source
               media="(min-width:976px)"
               srcset="assets/desktop/image-map.png"
@@ -56,7 +71,7 @@
               srcset="assets/tablet/image-map.png"
             />
             <img class="w-full" src="assets/mobile/image-map.png" alt="map" />
-          </picture>
+          </picture> -->
         </div>
       </section>
 
