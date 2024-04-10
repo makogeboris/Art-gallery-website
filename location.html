@@ -2,22 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Explore the Modern Art Gallery's diverse collection and immerse yourself in the creative process of renowned artists. Visit us to be inspired by our distinct exhibits. Free entry, open daily from 8am to 9pm at 99 King Street, Newport, USA. Connect with us on social media: Facebook, Instagram, Twitter."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link href="/dist/output.css" rel="stylesheet" />
-
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -29,91 +32,37 @@
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
-
-    <script defer src="js/script.js"></script>
+    <script defer src="script.js"></script>
     <title>Frontend Mentor | Art gallery website</title>
   </head>
   <body>
     <main>
       <section>
-        <div class="relative">
-          <!-- button -->
-          <div
-            id="btn"
-            class="absolute left-0 md:ml-10 lg:ml-[120px] flex justify-end bg-dark-black hover:bg-moderate-brown transition-all max-w-[260px] z-10"
-          >
-            <a
-              id="btn-arrow"
-              class="p-[22px] pt-[27px] bg-moderate-brown hover:bg-dark-black transition-all"
-              href="index.html"
-              ><img
-                class="flex items-center justify-center animate-pulse"
-                src="assets/icon-arrow-left.svg"
-                alt=""
+        <div class="map-container">
+          <div class="btn btn-home">
+            <a class="btn-arrow" href="index.html"
+              ><img src="assets/icon-arrow-left.svg" alt=""
             /></a>
-            <a
-              id="btn-link"
-              class="font-cursive font-extrabold text-[white] text-[20px] tracking-[3.64px] hover:bg-moderate-brown uppercase py-6 px-4 transition-all"
-              href="index.html"
-            >
+            <a class="btn-link btn-link-home" href="index.html">
               Back to Home</a
             >
           </div>
           <!-- leaflet map -->
-          <div class="h-[37.5rem] grayscale" id="map"></div>
-          <!-- <picture>
-            <source
-              media="(min-width:976px)"
-              srcset="assets/desktop/image-map.png"
-            />
-            <source
-              media="(min-width:768px)"
-              srcset="assets/tablet/image-map.png"
-            />
-            <img class="w-full" src="assets/mobile/image-map.png" alt="map" />
-          </picture> -->
+          <div id="map"></div>
         </div>
       </section>
 
-      <section
-        class="bg-dark-black h-[493px] md:h-[436px] lg:h-[548px] flex items-center"
-      >
-        <div
-          class="flex flex-col md:flex-row w-[343px] md:w-[689px] lg:w-[1110px] mx-auto"
-        >
+      <section class="location">
+        <div class="location-div">
+          <h2 class="day-gal gal1 gal1-location">Our location</h2>
           <div>
-            <h2
-              class="font-cursive uppercase font-black text-[#ffffff] text-[50px] md:text-[55px] lg:text-[70px] leading-[50px] md:leading-[55px] lg:leading-[70px] mb-12 md:mb-0 md:w-[223px] lg:w-[350px] md:mr-[68px] lg:mr-[220px]"
-            >
-              Our location
-            </h2>
-          </div>
-          <div>
-            <h3
-              class="font-cursive uppercase font-black text-moderate-brown text-[32px] lg:text-[36px] leading-[32px] lg:leading-[36px] mb-5 lg:mb-6"
-            >
-              99 King Street
-            </h3>
-            <div class="mb-5 lg:mb-8">
-              <p
-                class="font-sans font-light text-[#ffffff] text-lg lg:text-[22px] lg:leading-8"
-              >
-                Newport
-              </p>
-              <p
-                class="font-sans font-light text-[#ffffff] text-lg lg:text-[22px] lg:leading-8"
-              >
-                RI 02840
-              </p>
-              <p
-                class="font-sans font-light text-[#ffffff] text-lg lg:text-[22px] lg:leading-8"
-              >
-                United States of America
-              </p>
+            <h3 class="street">99 King Street</h3>
+            <div class="city">
+              <p class="day-gal-p galp">Newport</p>
+              <p class="day-gal-p galp">RI 02840</p>
+              <p class="day-gal-p galp">United States of America</p>
             </div>
-            <p
-              class="font-sans font-light text-[#ffffff] text-lg lg:text-[22px] lg:leading-8 w-[343px] md:w-[398px] lg:w-[540px]"
-            >
+            <p class="day-gal-p galp">
               Our newly opened gallery is located near the Edward King House on
               99 King Street, the Modern Art Gallery is free to all visitors and
               open seven days a week from 8am to 9pm.
@@ -123,45 +72,33 @@
       </section>
     </main>
 
-    <footer
-      class="bg-moderate-brown h-[336px] md:h-[216px] lg:h-[244px] flex items-center"
-    >
-      <div
-        class="flex flex-col md:flex-row w-[311px] md:w-[689px] lg:w-[1110px] mx-auto items-center"
-      >
-        <div class="pr-[194px] md:pr-0 md:pb-8 lg:pb-6">
-          <img
-            class="md:w-[159.57] md:h-[58px] mb-[38px] md:mb-0 md:mr-[64.95px] lg:mr-[140.43px]"
-            src="assets/logo-dark.svg"
-            alt="logo"
-          />
-        </div>
-        <div class="mb-[38px] md:mb-0 md:mr-[133px] lg:mr-[280px]">
-          <p
-            class="font-sans font-light text-dark-black text-base lg:text-lg w-[311px] md:w-[281px] lg:w-[430px]"
-          >
-            The Modern Art Gallery is free to all visitors and open seven days a
-            week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
-          </p>
-        </div>
-        <div class="flex space-x-5 md:pb-20 lg:pb-16 self-start">
+    <footer class="footer-location">
+      <div class="footer-div">
+        <a href="#"
+          ><img class="footer-logo" src="assets/logo-dark.svg" alt=""
+        /></a>
+        <p class="location-p">
+          The Modern Art Gallery is free to all visitors and open seven days a
+          week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </p>
+        <div class="icons">
           <a href="#" aria-label="visit Facebook"
             ><img
-              src="assets/icon-facebook.svg"
+              src="assets/fb-icon.svg"
               alt=""
-              class="duration-200 social-icon2"
+              class="social-icon social-icon2"
           /></a>
           <a href="#" aria-label="visit Instagram"
             ><img
-              src="assets/icon-instagram.svg"
+              src="assets/ig-icon.svg"
               alt=""
-              class="duration-200 social-icon2"
+              class="social-icon social-icon2"
           /></a>
           <a href="#" aria-label="visit Twitter"
             ><img
-              src="assets/icon-twitter.svg"
+              src="assets/tw-icon.svg"
               alt=""
-              class="duration-200 social-icon2"
+              class="social-icon social-icon2"
           /></a>
         </div>
       </div>
