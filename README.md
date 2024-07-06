@@ -21,8 +21,7 @@ Users should be able to:
 
 ### Links
 
--[ Solution](https://github.com/mkboris/Art-gallery-website)
-
+- [Solution](https://github.com/mkboris/Art-gallery-website)
 - [Live Site](https://art-gallery-website-three.vercel.app/)
 
 ### Built with
