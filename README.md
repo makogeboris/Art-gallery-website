@@ -20,6 +20,10 @@ Users should be able to:
 - See hover states for all interactive elements throughout the site
 - **Bonus**: Use [Leaflet JS](https://leafletjs.com/) to create an interactive location map with custom location pin
 
+### Screenshot
+
+![](./design/preview.jpg)
+
 ### Links
 
 - [Solution](https://github.com/mkboris/Art-gallery-website)
