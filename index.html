@@ -25,116 +25,86 @@
   </head>
   <body>
     <main>
-      <div>
-        <section class="hero">
-          <!-- dark background for desktop only -->
-          <div class="dark-bg"></div>
-          <picture>
+      <section class="hero">
+        <!-- dark background for desktop only -->
+        <div class="dark-bg"></div>
+        <picture>
+          <source
+            media="(min-width:976px)"
+            srcset="assets/desktop/image-hero.jpg"
+          />
+          <source
+            media="(min-width:660px)"
+            srcset="assets/tablet/image-hero.jpg"
+          />
+          <img
+            src="assets/mobile/image-hero.jpg"
+            alt="Two people looking at a picture on the wall"
+          />
+        </picture>
+
+        <div class="intro">
+          <div class="text">
+            <h1 class="main-heading">Modern Art Gallery</h1>
+            <p class="main-paragraph">
+              The arts in the collection of the Modern Art Gallery all started
+              from a spark of inspiration. Will these pieces inspire you? Visit
+              us and find out.
+            </p>
+          </div>
+          <div class="btn btn-location">
+            <a class="btn-arrow" href="location.html"
+              ><img src="assets/icon-arrow-right.svg" alt=""
+            /></a>
+            <a class="btn-link" href="location.html">Our location</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="images-grid">
+        <div class="grid-1-2">
+          <div class="grid-1">
+            <h2 class="day-gal">Your day at the gallery</h2>
+            <p class="day-gal-p">
+              Wander through our distinct collections and find new insights
+              about our artists. Dive into the details of their creative
+              process.
+            </p>
+          </div>
+
+          <div class="grid-2"></div>
+        </div>
+
+        <div class="grid-3-5">
+          <div class="grid-3"></div>
+
+          <picture class="grid-4">
             <source
               media="(min-width:976px)"
-              srcset="assets/desktop/image-hero.jpg"
+              srcset="assets/desktop/image-grid-3.jpg"
             />
             <source
               media="(min-width:660px)"
-              srcset="assets/tablet/image-hero.jpg"
+              srcset="assets/tablet/image-grid-3.jpg"
             />
             <img
-              src="assets/mobile/image-hero.jpg"
-              alt="Two people looking at a picture on the wall"
+              src="assets/mobile/image-grid-3.jpg"
+              alt="visitors in an art room discovering different art pieces"
             />
           </picture>
 
-          <div class="intro">
-            <div class="text">
-              <h1 class="main-heading">Modern Art Gallery</h1>
-              <p class="main-paragraph">
-                The arts in the collection of the Modern Art Gallery all started
-                from a spark of inspiration. Will these pieces inspire you?
-                Visit us and find out.
-              </p>
-            </div>
-            <div class="btn btn-location">
-              <a class="btn-arrow" href="location.html"
-                ><img src="assets/icon-arrow-right.svg" alt=""
-              /></a>
-              <a class="btn-link" href="location.html">Our location</a>
-            </div>
+          <div class="grid-5">
+            <h2 class="day-gal gal1">Come &amp; be inspired</h2>
+            <p class="day-gal-p galp">
+              We’re excited to welcome you to our gallery and see how our
+              collections influence you.
+            </p>
           </div>
-        </section>
-
-        <section class="images-grid">
-          <div class="grid-1-2">
-            <div class="grid-1">
-              <h2 class="day-gal">Your day at the gallery</h2>
-              <p class="day-gal-p">
-                Wander through our distinct collections and find new insights
-                about our artists. Dive into the details of their creative
-                process.
-              </p>
-            </div>
-
-            <picture class="grid-2">
-              <source
-                media="(min-width:976px)"
-                srcset="assets/desktop/image-grid-1.jpg"
-              />
-              <source
-                media="(min-width:660px)"
-                srcset="assets/tablet/image-grid-1.jpg"
-              />
-              <img
-                src="assets/mobile/image-grid-1.jpg"
-                alt="a wide view of an art room with artifacts on the wall"
-              />
-            </picture>
-          </div>
-
-          <div class="grid-3-5">
-            <picture class="grid-3">
-              <source
-                media="(min-width:976px)"
-                srcset="assets/desktop/image-grid-2.jpg"
-              />
-              <source
-                media="(min-width:660px)"
-                srcset="assets/tablet/image-grid-2.jpg"
-              />
-              <img
-                src="assets/mobile/image-grid-2.jpg"
-                alt="an art room with a brown bench facing an picture on the wall"
-              />
-            </picture>
-
-            <div class="grid-4-5">
-              <picture class="grid-4">
-                <source
-                  media="(min-width:976px)"
-                  srcset="assets/desktop/image-grid-3.jpg"
-                />
-                <source
-                  media="(min-width:660px)"
-                  srcset="assets/tablet/image-grid-3.jpg"
-                />
-                <img
-                  src="assets/mobile/image-grid-3.jpg"
-                  alt="visitors in an art room discovering different art pieces"
-                />
-              </picture>
-
-              <div class="grid-5">
-                <h2 class="day-gal gal1">Come &amp; be inspired</h2>
-                <p class="day-gal-p galp">
-                  We’re excited to welcome you to our gallery and see how our
-                  collections influence you.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
+    <footer class="footer-home">
       <div class="footer-div">
         <a href="#"
           ><img class="footer-logo" src="assets/logo-light.svg" alt=""
