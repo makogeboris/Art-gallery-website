@@ -1,3 +1,13 @@
+:root {
+  --brown: #d5966c;
+  --dark: #151515;
+  --white: #ffffff;
+  --grey: #444444;
+
+  --ff-pri: "Big Shoulders Display";
+  --ff-sec: "Outfit";
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -100,10 +110,6 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-body {
-  font-family: "Big Shoulders Display", sans-serif;
-}
-
 .hero {
   display: flex;
   flex-direction: column;
@@ -122,21 +128,21 @@ body {
 }
 
 .main-heading {
-  font-family: "Big Shoulders Display";
+  font-family: var(--ff-pri);
   font-weight: 900;
   font-size: 3.75rem;
   line-height: 92%;
   text-transform: uppercase;
-  color: #151515;
+  color: var(--dark);
   margin-bottom: 2rem;
 }
 
 .main-paragraph {
-  font-family: "Outfit";
+  font-family: var(--ff-sec);
   font-weight: 300;
   font-size: 1.125rem;
   line-height: 156%;
-  color: #444444;
+  color: var(--grey);
   margin-bottom: 2rem;
 }
 
@@ -147,39 +153,44 @@ body {
 }
 
 .btn-link {
-  font-family: "Big Shoulders Display";
+  font-family: var(--ff-pri);
   text-transform: uppercase;
   font-weight: 800;
   font-size: 1.25rem;
   line-height: 1.5;
   letter-spacing: 0.2272725em;
-  color: #ffffff;
+  color: var(--white);
   text-decoration: none;
-  background: #151515;
+  background: var(--dark);
   padding: 1.5rem;
 }
 
+.btn-arrow,
+.btn-link {
+  transition: all 0.3s;
+}
+
 .btn-link:hover {
-  background: #d5966c;
+  background: var(--brown);
 }
 
 .btn-arrow:hover {
-  background: #151515;
+  background: var(--dark);
 }
 
 .btn:hover .btn-arrow {
-  background: #151515;
+  background: var(--dark);
 }
 
 .btn-arrow:hover .btn-link {
-  background: #d5966c;
+  background: var(--brown);
 }
 
 .btn-arrow {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #d5966c;
+  background: var(--brown);
   padding: 1.5em;
 }
 
@@ -206,7 +217,7 @@ body {
 
 .gal1 {
   grid-area: text;
-  color: #ffffff;
+  color: var(--white);
   transition: all 0.5s ease-in;
 }
 
@@ -236,12 +247,12 @@ body {
 }
 
 .grid-5 {
-  background: #151515;
+  background: var(--dark);
   padding: 3rem 1.5rem;
 }
 
 .day-gal {
-  font-family: "Big Shoulders Display";
+  font-family: var(--ff-pri);
   font-weight: 900;
   font-size: 3.125rem;
   line-height: 90%;
@@ -258,15 +269,15 @@ body {
 }
 
 .day-gal-p {
-  font-family: "Outfit";
+  font-family: var(--ff-sec);
   font-weight: 400;
   font-size: 1.125rem;
   line-height: 156%;
-  color: #444444;
+  color: var(--grey);
 }
 
 .galp {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .dark-bg {
@@ -274,28 +285,28 @@ body {
 }
 
 .footer-location {
-  background: #d5966c;
+  background: var(--brown);
 }
 
 .location-p {
-  font-family: "Outfit";
+  font-family: var(--ff-sec);
   font-weight: 400;
   font-size: 1rem;
   line-height: 162%;
-  color: #151515;
+  color: var(--dark);
 }
 
 footer {
-  background: #151515;
+  background: var(--dark);
   padding-block: 3.5rem;
 }
 
 footer p {
-  font-family: "Outfit";
+  font-family: var(--ff-sec);
   font-weight: 400;
   font-size: 1rem;
   line-height: 162%;
-  color: #ffffff;
+  color: var(--white);
   max-width: 23.125rem;
 }
 
@@ -321,7 +332,7 @@ footer p {
 }
 
 .location {
-  background: #151515;
+  background: var(--dark);
   margin: 0 auto;
   padding-inline: 1.25rem;
 }
@@ -340,17 +351,21 @@ footer p {
 }
 
 .street {
-  font-family: "Big Shoulders Display";
+  font-family: var(--ff-pri);
   font-weight: 900;
   font-size: 2rem;
   line-height: 100%;
   text-transform: uppercase;
-  color: #d5966c;
+  color: var(--brown);
   margin-bottom: 1.25rem;
 }
 
 .city {
   margin-bottom: 1.25rem;
+}
+
+.social-icon {
+  transition: all 0.3s;
 }
 
 .social-icon:hover {
@@ -484,7 +499,7 @@ footer p {
     display: block;
     width: 28.125rem;
     min-height: 50rem;
-    background: #151515;
+    background: var(--dark);
   }
 
   .intro {
@@ -501,7 +516,7 @@ footer p {
   .main-heading {
     font-size: 6rem;
     line-height: 92%;
-    color: #ffffff;
+    color: var(--white);
     margin-bottom: 0;
     mix-blend-mode: difference;
     max-width: 32.125rem;
@@ -525,10 +540,6 @@ footer p {
   .images-grid {
     margin-bottom: 11.25rem;
   }
-
-  /* .grid-1-2 {
-    gap: 7.8125rem;
-  } */
 
   .grid-1 {
     max-width: 21.875rem;
