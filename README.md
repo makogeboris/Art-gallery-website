@@ -1,16 +1,14 @@
 # Frontend Mentor - Art gallery website solution
 
-This is a solution to the [Art gallery website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/art-gallery-website-yVdrZlxyA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-  - [Continued development](#continued-development)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 - [Author](#author)
-
-
 
 ## Overview
 
@@ -23,8 +21,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/mkboris/Art-gallery-website
-- Live Site URL: https://art-gallery-website-three.vercel.app/
+-[ Solution](https://github.com/mkboris/Art-gallery-website)
+
+- [Live Site](https://art-gallery-website-three.vercel.app/)
 
 ### Built with
 
@@ -32,13 +31,10 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- Leaflet
 
-### Continued development
-
-Building more projects to improve my skills.
+### What I learned
 
 ## Author
 
 - Frontend Mentor - [@mkboris](https://www.frontendmentor.io/profile/mkboris)
-- Twitter - [@mk_boris](https://www.twitter.com/mk_boris)
-
