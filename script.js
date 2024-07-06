@@ -1,4 +1,4 @@
-// "use strict";
+"use strict";
 
 const map = L.map("map").setView([41.479736, -71.311124], 16.5);
 
