@@ -39,6 +39,8 @@ Users should be able to:
 
 ### What I learned
 
+I learned how to use the Leaflet library to render an interactive map on the web page and also using the Geolocalisation API to get the users current location and displaying it on the map.
+
 ## Author
 
 - Frontend Mentor - [@mkboris](https://www.frontendmentor.io/profile/mkboris)
