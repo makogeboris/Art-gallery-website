@@ -26,7 +26,6 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://github.com/mkboris/Art-gallery-website)
 - [Live Site](https://art-gallery-website-three.vercel.app/)
 
 ### Built with
@@ -44,4 +43,5 @@ I learned how to use the Leaflet library to render an interactive map on the web
 
 ## Author
 
-- Frontend Mentor - [@mkboris](https://www.frontendmentor.io/profile/mkboris)
+- Frontend Mentor - [makogeboris](https://www.frontendmentor.io/profile/makogeboris)
+- Twitter - [makogeboris](https://x.com/makogeboris)
